@@ -11,7 +11,7 @@ const Products = ({data}) => {
       <div className="my-12 flex flex-wrap gap-2 justify-center  ">
         {
             // eslint-disable-next-line react/prop-types
-            data.slice(0,6).map((property)=>( <SingleProduct key={property.id} property={property}/>))
+            data.map((property)=>( <SingleProduct key={property.id} property={property}/>))
         }
         </div>
         </div>
