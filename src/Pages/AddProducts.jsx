@@ -18,7 +18,7 @@ const AddProducts = () => {
     const data = { title,address, price, description, image_url };
     console.log(data);
 
-    await fetch("http://localhost:5000/properties", {
+    await fetch("https://web-app-mern-server.vercel.app/properties", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

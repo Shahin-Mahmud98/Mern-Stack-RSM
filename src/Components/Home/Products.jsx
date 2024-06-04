@@ -8,7 +8,7 @@ const Products = ({data}) => {
         <div>
       <h1 className="my-8 text-2xl font-bold text-center">Our Products</h1>
 
-      <div className="my-12 flex flex-wrap gap-2 px-6 justify-center items-center ">
+      <div className="my-12 flex flex-wrap gap-2 justify-center  ">
         {
             // eslint-disable-next-line react/prop-types
             data.slice(0,6).map((property)=>( <SingleProduct key={property.id} property={property}/>))

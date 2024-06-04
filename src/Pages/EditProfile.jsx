@@ -10,18 +10,18 @@ export default function EditProfile() {
     const name = form.name.value;
     const age = form.age.value;
     // const email = form.data?.email.value;
-    const mobileNumber = form.mobileNumber.value;
+    const password = form.password.value;
 
     const userData = {
       name,
       age,
-      mobileNumber,
+      password,
         email: data?.email,
 }
 console.log(userData)
 
     fetch(
-      `http://localhost:5000/user/${data?.email}`,
+      `https://web-app-mern-server.vercel.app/user/${data?.email}`,
       {
         method: "PATCH",
         headers: {
@@ -63,10 +63,10 @@ console.log(userData)
           <input type="text" name="age" className="py-2 px-1 bg-slate-50 " />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="">User Mobile</label>
+          <label htmlFor="">Password</label>
           <input
-            type="text"
-            name="mobileNumber"
+            type="password"
+            name="password"
             className="py-2 px-1 bg-slate-50 "
           />
         </div>
