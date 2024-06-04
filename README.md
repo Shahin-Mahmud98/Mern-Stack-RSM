@@ -133,7 +133,6 @@ key   : FRONTEND_DEV, value : ` http://localhost:5000 `
 key: VITE_HOST;
 value: YOUR_BACKEND_WEBSITE_URL;
 ```
-
 ---
 
 ##  website is live on Frontend Website Link.
