@@ -69,6 +69,13 @@ console.log(userData)
             name="password"
             className="py-2 px-1 bg-slate-50 "
           />
+          <div className="flex flex-col">
+          <input
+            type="image" id="image" alt="Login" src=""
+            value="image"
+            className="py-2 px-1 bg-slate-950 text-white "
+          />
+        </div>
         </div>
         <div className="flex flex-col">
           <input
@@ -77,6 +84,7 @@ console.log(userData)
             className="py-2 px-1 bg-slate-950 text-white "
           />
         </div>
+        
       </form>
     </div>
   );
