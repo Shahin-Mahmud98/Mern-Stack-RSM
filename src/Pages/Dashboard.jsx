@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Dashboard = () => {
     const { user} = useAuth();
 
-    console.log(user?.email)
+    // console.log(user?.email)
 
 
     const [userInfo, setUserInfo] = useState();
@@ -19,7 +19,7 @@ const Dashboard = () => {
         }
     }, [user]);
 
-    console.log(userInfo);
+    // console.log(userInfo);
     return (
         <div>
       <div className="flex justify-between mb-7">
@@ -34,9 +34,9 @@ const Dashboard = () => {
       <div>
         <h1>{userInfo?.name}</h1>
         <h1>{userInfo?.email}</h1>
-        <h1>{userInfo?.password}</h1>
+        {/* <h1>{userInfo?.password}</h1>
         <h1>{userInfo?.age}</h1>
-        <img src={userInfo?.image_url} alt="" />
+        <img src={userInfo?.image_url} alt="" /> */}
       </div>
     </div>
     );
