@@ -34,6 +34,9 @@ const Dashboard = () => {
       <div>
         <h1>{userInfo?.name}</h1>
         <h1>{userInfo?.email}</h1>
+        <h1>{userInfo?.password}</h1>
+        <h1>{userInfo?.age}</h1>
+        <img src={userInfo?.image_url} alt="" />
       </div>
     </div>
     );

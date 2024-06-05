@@ -9,6 +9,7 @@ export default function EditProfile() {
     const form = e.target;
     const name = form.name.value;
     const age = form.age.value;
+    const image_url = form.image_url.value;
     // const email = form.data?.email.value;
     const password = form.password.value;
 
@@ -16,6 +17,7 @@ export default function EditProfile() {
       name,
       age,
       password,
+      image_url,
         email: data?.email,
 }
 console.log(userData)
@@ -69,13 +71,14 @@ console.log(userData)
             name="password"
             className="py-2 px-1 bg-slate-50 "
           />
-          <div className="flex flex-col">
-          <input
-            type="image" id="image" alt="Login" src=""
-            value="image"
-            className="py-2 px-1 bg-slate-950 text-white "
-          />
-        </div>
+          <div className="mt-2">
+            <input
+              className="bg-gray-100 p-4 w-full border border-black rounded-lg"
+              type="text"
+              name="image_url"
+              placeholder="Image URL"
+            />
+          </div>
         </div>
         <div className="flex flex-col">
           <input
