@@ -33,7 +33,7 @@ const Register = () => {
                 email:data?.user?.email,
                 name :name,
             };
-            fetch('http://localhost:5000/user',{
+            fetch('https://web-app-mern-server-db5s.onrender.com/user',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json',

@@ -44,7 +44,7 @@ const EditProducts = () => {
 
     console.log(data)
 
-    await fetch(`http://localhost:5000/properties/${property._id}`, {
+    await fetch(`https://web-app-mern-server-db5s.onrender.com/properties/${property._id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

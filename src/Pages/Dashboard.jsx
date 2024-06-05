@@ -12,7 +12,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:5000/user/${user?.email}`)
+            fetch(`https://web-app-mern-server-db5s.onrender.com/user/${user?.email}`)
                 .then((res) => res.json())
                 .then((data) => setUserInfo(data))
                 

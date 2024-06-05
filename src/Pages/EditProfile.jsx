@@ -21,7 +21,7 @@ export default function EditProfile() {
 console.log(userData)
 
     fetch(
-      `http://localhost:5000/user/${data?.email}`,
+      `https://web-app-mern-server-db5s.onrender.com/user/${data?.email}`,
       {
         method: "PATCH",
         headers: {

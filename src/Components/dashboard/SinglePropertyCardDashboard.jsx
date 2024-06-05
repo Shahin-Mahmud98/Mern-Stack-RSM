@@ -8,7 +8,7 @@ const SinglePropertyCardDashboard = ({ property,onDelete  }) => {
   const { _id, title,address, price, description, image_url } = property;
 
   const handleDelete = async () => {
-    await fetch(`http://localhost:5000/properties/${_id}`, {
+    await fetch(`https://web-app-mern-server-db5s.onrender.com/properties/${_id}`, {
       method: "DELETE",
       headers:{
         "Content-type":"application/json",

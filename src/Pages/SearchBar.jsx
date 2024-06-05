@@ -153,7 +153,7 @@
 // // //   useEffect(() => {
 // // //     const fetchData = async () => {
 // // //       try {
-// // //         const response = await axios.get('http://localhost:5000/search', {
+// // //         const response = await axios.get('https://web-app-mern-server-db5s.onrender.com/search', {
 // // //           params: { q: searchTerm },
 // // //         });
 // // //         setData(response.data);

@@ -8,7 +8,7 @@ const AllProducts = () => {
     const [protertys,setProtertys] = useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:5000/properties/")
+        fetch("https://web-app-mern-server-db5s.onrender.com/properties/")
         .then((res) => res.json())
         .then((data )=> setProtertys(data));
     },[]);

@@ -26,13 +26,13 @@ export const router = createBrowserRouter([
                 path:'/',
                 element:<Home/>,
                 loader:() =>
-                    fetch("http://localhost:5000/properties")
+                    fetch("https://web-app-mern-server-db5s.onrender.com/properties")
             },
             {
                 path: "/products/:id",
                 element: <PropertDetails />,
                 loader: ({ params }) =>
-                  fetch(`http://localhost:5000/properties/${params.id}`),
+                  fetch(`https://web-app-mern-server-db5s.onrender.com/properties/${params.id}`),
               },
             {
                 path:'/about',
@@ -75,7 +75,7 @@ export const router = createBrowserRouter([
             </PrivateRoute>
             ),
             loader: ({ params }) =>
-              fetch(`http://localhost:5000/user/${params.id}`),
+              fetch(`https://web-app-mern-server-db5s.onrender.com/user/${params.id}`),
         },
         {
             path: "dashboard/all-products",
@@ -101,7 +101,7 @@ export const router = createBrowserRouter([
               </PrivateRoute>
             ),
             loader: ({ params }) =>
-              fetch(`http://localhost:5000/properties/${params.id}`),
+              fetch(`https://web-app-mern-server-db5s.onrender.com/properties/${params.id}`),
           },
         ],
       },
