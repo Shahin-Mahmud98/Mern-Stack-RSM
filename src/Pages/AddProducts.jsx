@@ -79,14 +79,7 @@ const AddProducts = () => {
               placeholder="Image URL"
             />
           </div>
-          {/* <div className="mt-2">
-            <input
-              className="bg-gray-100 p-4 w-full border border-black rounded-lg"
-              type="number"
-              name="id"
-              placeholder="ID"
-            />
-          </div> */}
+          
 
           <div className="mt-2 flex justify-center items-center">
             <input
