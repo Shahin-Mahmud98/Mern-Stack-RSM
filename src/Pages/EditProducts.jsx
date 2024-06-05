@@ -13,7 +13,7 @@ const EditProducts = () => {
   // eslint-disable-next-line no-unused-vars
   const [price, setPrice] = useState(property.price)
   // eslint-disable-next-line no-unused-vars
-  const [address, setAddress] = useState(property.brand)
+  const [address, setAddress] = useState(property.address)
   // eslint-disable-next-line no-unused-vars
   // const [id, setId] = useState(property.id)
   // eslint-disable-next-line no-unused-vars
