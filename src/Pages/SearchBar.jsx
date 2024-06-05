@@ -153,7 +153,7 @@
 // // //   useEffect(() => {
 // // //     const fetchData = async () => {
 // // //       try {
-// // //         const response = await axios.get('https://web-app-mern-server.vercel.app/search', {
+// // //         const response = await axios.get('http://localhost:5000/search', {
 // // //           params: { q: searchTerm },
 // // //         });
 // // //         setData(response.data);

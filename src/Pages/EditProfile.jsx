@@ -21,7 +21,7 @@ export default function EditProfile() {
 console.log(userData)
 
     fetch(
-      `https://web-app-mern-server.vercel.app/user/${data?.email}`,
+      `http://localhost:5000/user/${data?.email}`,
       {
         method: "PATCH",
         headers: {

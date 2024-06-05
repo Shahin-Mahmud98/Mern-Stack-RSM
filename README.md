@@ -47,8 +47,8 @@ FRONTEND =  Live Link
 - Create a .env file in the "Frontend" Folder.
 
 ```js
-VITE_HOST = ` https://web-app-mern-server.vercel.app `
-In Development => ` https://web-app-mern-server.vercel.app ` (default:5000)
+VITE_HOST = ` http://localhost:5000 `
+In Development => ` http://localhost:5000 ` (default:5000)
 In Production  => YOUR_BACKEND_WEBSITE_LINK (afer deploying your backend)
 ```
 
@@ -120,7 +120,7 @@ Root Directory : BACKEND
 key   : FRONTEND, value : YOUR_FRONTEND_WEBSITE_URL (PASTE YOUR FRONTEND URL HERE),
 key   : JWT_SIGNATURE, value : YOUR_JWT_SECRET,
 key   : MONGO_URI, value : YOUR_MONGO_DB_URL,
-key   : FRONTEND_DEV, value : ` https://web-app-mern-server.vercel.app `
+key   : FRONTEND_DEV, value : ` http://localhost:5000 `
 
 ```
 

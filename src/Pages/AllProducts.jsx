@@ -8,7 +8,7 @@ const AllProducts = () => {
     const [protertys,setProtertys] = useState([]);
 
     useEffect(()=>{
-        fetch("https://web-app-mern-server.vercel.app/properties/")
+        fetch("http://localhost:5000/properties/")
         .then((res) => res.json())
         .then((data )=> setProtertys(data));
     },[]);
